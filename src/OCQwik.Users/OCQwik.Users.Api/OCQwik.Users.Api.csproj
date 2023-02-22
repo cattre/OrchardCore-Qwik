@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>$(AspNetCoreTargetFramework)</TargetFramework>
+        <RootNamespace>OCQwik.Users.Api</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="OrchardCore.Module.Targets" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\OCQwik.Users.Application\OCQwik.Users.Application.csproj" />
+        <ProjectReference Include="..\OCQwik.Users.Infrastructure\OCQwik.Users.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>

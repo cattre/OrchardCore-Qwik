@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>$(AspNetCoreTargetFramework)</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>OrchardCore_Qwik.Web</RootNamespace>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="OrchardCore.Configuration.KeyVault" />
+        <PackageReference Include="OrchardCore.Logging.NLog" />
+        <PackageReference Include="OrchardCore.Application.Cms.Targets" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Condition="'$(RazorRuntimeCompilation)' == 'true'" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\OCQwik.Users\OCQwik.Users.Api\OCQwik.Users.Api.csproj" />
+        <ProjectReference Include="..\OCQwik.Users\OCQwik.Users.Application\OCQwik.Users.Application.csproj" />
+        <ProjectReference Include="..\OCQwik.Users\OCQwik.Users.Domain\OCQwik.Users.Domain.csproj" />
+        <ProjectReference Include="..\OCQwik.Users\OCQwik.Users.Infrastructure\OCQwik.Users.Infrastructure.csproj" />
+        <ProjectReference Include="..\Modules\OCQwik.API\OCQwik.API.csproj" />
+        <ProjectReference Include="..\Modules\OCQwik.UI\OCQwik.UI.csproj" />
+<!--            <GlobalPropertiesToRemove></GlobalPropertiesToRemove>-->
+<!--        </ProjectReference>-->
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\.placeholder" />
+    </ItemGroup>
+</Project>
