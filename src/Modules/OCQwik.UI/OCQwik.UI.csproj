@@ -1,9 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFramework>$(AspNetCoreTargetFramework)</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+        <SpaPackageInstallCmd>yarn install</SpaPackageInstallCmd>
+        <SpaBuildCmd>yarn build</SpaBuildCmd>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
 
+    <ItemGroup>
+        <PackageReference Include="OrchardCore.Module.Targets" />
+        <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" />
+        <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" />
+        <PackageReference Include="OrchardCore.Abstractions" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="ClientApp" />
+    </ItemGroup>
+    
 </Project>
