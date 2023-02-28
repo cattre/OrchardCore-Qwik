@@ -5,8 +5,8 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
-        <SpaPackageInstallCmd>yarn install</SpaPackageInstallCmd>
-        <SpaBuildCmd>yarn build</SpaBuildCmd>
+        <SpaPackageInstallCmd>pnpm install</SpaPackageInstallCmd>
+        <SpaBuildCmd>pnpm build</SpaBuildCmd>
     </PropertyGroup>
     
     <ItemGroup>
@@ -16,7 +16,6 @@
     <ItemGroup>
         <PackageReference Include="OrchardCore.Module.Targets" />
         <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" />
-        <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" />
         <PackageReference Include="OrchardCore.Abstractions" />
     </ItemGroup>
 

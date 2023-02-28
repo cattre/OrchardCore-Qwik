@@ -18,22 +18,30 @@ namespace OCQwik.UI
 
         public override void ConfigureServices(IServiceCollection services)
         {
-            services.AddSpaStaticFiles(spa => spa.RootPath = "../OCQwik.UI/ClientApp");
+            services.AddSpaStaticFiles(spa => spa.RootPath = "ClientApp/dist");
         }
 
         public override void Configure(IApplicationBuilder app, IEndpointRouteBuilder routes, IServiceProvider serviceProvider)
         {
+            if (_env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
             app.UseSpaStaticFiles();
+
             app.Map("/app", spaApp =>
             {
                 spaApp.UseSpa(spa =>
                 {
-                    spa.Options.SourcePath = Path.Join(_env.ContentRootPath, "../OCQwik.UI/ClientApp");
+                    // spa.Options.SourcePath = Path.Join(_env.ContentRootPath, "ClientApp");
 
-                    if (_env.IsDevelopment())
-                    {
-                        spa.UseReactDevelopmentServer(npmScript: "start");
-                    }
+                    spa.Options.SourcePath = "ClientApp";
+
+                    // if (_env.IsDevelopment())
+                    // {
+                    //     spa.UseProxyToSpaDevelopmentServer("http://localhost:5173/");
+                    // }
                 });
             });
         }

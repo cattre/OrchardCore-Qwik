@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>$(AspNetCoreTargetFramework)</TargetFramework>
-        <RootNamespace>OCQwik.Api</RootNamespace>
+        <RootNamespace>OCQwik.API</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>

@@ -1,17 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
-using OCQwik.Api;
 using Hellang.Middleware.ProblemDetails;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
-using Newtonsoft.Json;
 using NSwag;
 using NSwag.Generation.Processors.Security;
 using OrchardCore.Environment.Shell;
@@ -20,7 +14,7 @@ using OrchardCore.Modules;
 using OrchardCore.Users;
 
 
-namespace OCQwik.Api
+namespace OCQwik.API
 {
     public class Startup : StartupBase
     {

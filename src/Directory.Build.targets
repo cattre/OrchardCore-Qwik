@@ -46,6 +46,7 @@
         <PackageReference Update="Microsoft.Extensions.DependencyInjection.Abstractions" Version="$(MicrosoftExtensionsPackagesVersion)" />
         <PackageReference Update="Microsoft.Extensions.Logging.Abstractions" Version="$(MicrosoftExtensionsPackagesVersion)" />
         <PackageReference Update="Microsoft.Extensions.Identity.Core" Version="$(MicrosoftExtensionsPackagesVersion)" />
+        <PackageReference Update="Microsoft.AspNetCore.SpaServices.Extensions" Version="$(MicrosoftExtensionsPackagesVersion)" />
     </ItemGroup>
 
     <ItemGroup>
