@@ -4,7 +4,7 @@ using OrchardCore.Modules.Manifest;
     Name = "OCQwik.Users.Api",
     Author = "Richard Catterill",
     Version = "0.0.1",
-    Description = "OCQwik Api",
+    Description = "OCQwik Users Api",
     Category = "OCQwik",
     Dependencies = new string[] {
         "OCQwik.Api"

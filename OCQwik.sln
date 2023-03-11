@@ -12,21 +12,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Common.props = Common.props
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCQwik.Users", "src/OCQwik.Users", "{8EAA0F89-EC7B-435E-BE1C-CCE691889146}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCQwik.Users", "src\OCQwik.Users", "{8EAA0F89-EC7B-435E-BE1C-CCE691889146}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCQwik.Users.Api", "src/OCQwik.Users\OCQwik.Users.Api\OCQwik.Users.Api.csproj", "{2869B775-EE1C-4225-9423-7FE8889CF546}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCQwik.Users.Api", "src\OCQwik.Users\OCQwik.Users.Api\OCQwik.Users.Api.csproj", "{2869B775-EE1C-4225-9423-7FE8889CF546}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCQwik.Users.Application", "src/OCQwik.Users\OCQwik.Users.Application\OCQwik.Users.Application.csproj", "{868E1F50-F357-4B02-BDCF-73A73B350FF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCQwik.Users.Application", "src\OCQwik.Users\OCQwik.Users.Application\OCQwik.Users.Application.csproj", "{868E1F50-F357-4B02-BDCF-73A73B350FF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCQwik.Users.Domain", "src/OCQwik.Users\OCQwik.Users.Domain\OCQwik.Users.Domain.csproj", "{1110FF33-263E-4B86-A4EC-913E008E3FC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCQwik.Users.Domain", "src\OCQwik.Users\OCQwik.Users.Domain\OCQwik.Users.Domain.csproj", "{1110FF33-263E-4B86-A4EC-913E008E3FC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCQwik.Users.Infrastructure", "src/OCQwik.Users\OCQwik.Users.Infrastructure\OCQwik.Users.Infrastructure.csproj", "{8F24C859-C652-477A-97ED-ACA8EEDCE5CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCQwik.Users.Infrastructure", "src\OCQwik.Users\OCQwik.Users.Infrastructure\OCQwik.Users.Infrastructure.csproj", "{8F24C859-C652-477A-97ED-ACA8EEDCE5CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCQwik.UI", "src\Modules\OCQwik.UI\OCQwik.UI.csproj", "{8A99C1C8-4029-4BE0-A320-279B058971AF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "src/Modules", "{60D1803C-80D5-433E-8D0C-AC89BD5E113E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "src\Modules", "{60D1803C-80D5-433E-8D0C-AC89BD5E113E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCQwik.API", "src\Modules\OCQwik.API\OCQwik.API.csproj", "{5A1F8998-F40B-4B9B-943D-3F16E9C9E4FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abstractions", "src\Abstractions", "{2255576E-7703-4DCC-A32D-A1637E4A7746}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCQwik.UI.Abstractions", "src\Abstractions\OCQwik.UI.Abstractions\OCQwik.UI.Abstractions.csproj", "{C900DA49-C8B3-4539-ADFF-7B644D30FBA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +66,10 @@ Global
 		{5A1F8998-F40B-4B9B-943D-3F16E9C9E4FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A1F8998-F40B-4B9B-943D-3F16E9C9E4FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A1F8998-F40B-4B9B-943D-3F16E9C9E4FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C900DA49-C8B3-4539-ADFF-7B644D30FBA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C900DA49-C8B3-4539-ADFF-7B644D30FBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C900DA49-C8B3-4539-ADFF-7B644D30FBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C900DA49-C8B3-4539-ADFF-7B644D30FBA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,5 +84,6 @@ Global
 		{8F24C859-C652-477A-97ED-ACA8EEDCE5CB} = {8EAA0F89-EC7B-435E-BE1C-CCE691889146}
 		{8A99C1C8-4029-4BE0-A320-279B058971AF} = {60D1803C-80D5-433E-8D0C-AC89BD5E113E}
 		{5A1F8998-F40B-4B9B-943D-3F16E9C9E4FD} = {60D1803C-80D5-433E-8D0C-AC89BD5E113E}
+		{C900DA49-C8B3-4539-ADFF-7B644D30FBA4} = {2255576E-7703-4DCC-A32D-A1637E4A7746}
 	EndGlobalSection
 EndGlobal

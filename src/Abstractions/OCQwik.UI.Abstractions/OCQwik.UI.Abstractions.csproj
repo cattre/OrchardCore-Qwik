@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>$(AspNetCoreTargetFramework)</TargetFramework>
+<!--        <ImplicitUsings>enable</ImplicitUsings>-->
+<!--        <Nullable>enable</Nullable>-->
+        <RootNamespace>OCQwik.UI.Abstractions</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" />
+        <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" />
+        <PackageReference Include="OrchardCore.Abstractions" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Package.Build.props">
+        <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+      </None>
+    </ItemGroup>
+    
+</Project>

@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using GraphQL.Types;
 using OrchardCore.Entities;
 using OrchardCore.Users.Models;
 
@@ -21,4 +22,17 @@ public record UserDto
 
     [Required]
     public string Email { get; init; }
+}
+
+public class UserQueryObjectType : ObjectGraphType<User>
+{
+    public UserQueryObjectType()
+    {
+        Name = "User";
+
+        // Map the fields you want to expose
+        Field(x => x.UserId);
+        Field(x => x.UserName);
+        Field(x => x.Email);
+    }
 }

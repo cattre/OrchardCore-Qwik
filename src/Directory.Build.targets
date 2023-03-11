@@ -35,6 +35,9 @@
         <PackageReference Update="OrchardCore.ContentManagement" Version="$(OrchardCoreVersion)" />
         <PackageReference Update="OrchardCore.ContentTypes.Abstractions" Version="$(OrchardCoreVersion)" />
         <PackageReference Update="OrchardCore.Email.Abstractions" Version="$(OrchardCoreVersion)" />
+        <PackageReference Update="OrchardCore.Abstractions" Version="$(OrchardCoreVersion)" />
+        <PackageReference Update="OrchardCore.Apis.GraphQL" Version="$(OrchardCoreVersion)" />
+        <PackageReference Update="OrchardCore.Apis.GraphQL.Abstractions" Version="$(OrchardCoreVersion)" />
     </ItemGroup>
 
     <ItemGroup>
@@ -47,6 +50,8 @@
         <PackageReference Update="Microsoft.Extensions.Logging.Abstractions" Version="$(MicrosoftExtensionsPackagesVersion)" />
         <PackageReference Update="Microsoft.Extensions.Identity.Core" Version="$(MicrosoftExtensionsPackagesVersion)" />
         <PackageReference Update="Microsoft.AspNetCore.SpaServices.Extensions" Version="$(MicrosoftExtensionsPackagesVersion)" />
+        <PackageReference Update="Microsoft.AspNetCore.SpaServices.Extensions" Version="$(MicrosoftExtensionsPackagesVersion)" />
+        <PackageReference Update="Microsoft.Extensions.FileProviders.Abstractions" Version="$(MicrosoftExtensionsPackagesVersion)" />
     </ItemGroup>
 
     <ItemGroup>

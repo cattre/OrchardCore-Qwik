@@ -25,6 +25,7 @@
         <ProjectReference Include="..\OCQwik.Users\OCQwik.Users.Infrastructure\OCQwik.Users.Infrastructure.csproj" />
         <ProjectReference Include="..\Modules\OCQwik.API\OCQwik.API.csproj" />
         <ProjectReference Include="..\Modules\OCQwik.UI\OCQwik.UI.csproj" />
+        <ProjectReference Include="..\Abstractions\OCQwik.UI.Abstractions\OCQwik.UI.Abstractions.csproj" />
 <!--            <GlobalPropertiesToRemove></GlobalPropertiesToRemove>-->
 <!--        </ProjectReference>-->
     </ItemGroup>

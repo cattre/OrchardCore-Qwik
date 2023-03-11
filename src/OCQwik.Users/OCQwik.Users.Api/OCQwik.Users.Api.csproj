@@ -11,6 +11,8 @@
 
     <ItemGroup>
         <PackageReference Include="OrchardCore.Module.Targets" />
+        <PackageReference Include="OrchardCore.Apis.GraphQL" />
+        <PackageReference Include="OrchardCore.Apis.GraphQL.Abstractions" />
     </ItemGroup>
 
     <ItemGroup>
